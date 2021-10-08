@@ -83,7 +83,7 @@
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
 
                     <div class="info">
-                        <a href="#" class="d-block">Fuentes Peralta Nelson Kevin</a>
+                        <a href="#" class="d-block">Administrador</a>
                     </div>
                 </div>
 
@@ -113,9 +113,16 @@
                         <li class="nav-item">
                             <a href="solicitudListar.html" class="nav-link">
                                 <i class="nav-icon far fa-edit"></i>
-                                <p> Solicitudes </p>
+                                <p> Salidas </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="entradaListar.html" class="nav-link">
+                                <i class="nav-icon far fa-edit"></i>
+                                <p> Entradas </p>
+                            </a>
+                        </li>
+
 
 
                     </ul>
@@ -132,12 +139,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Inventario</h1>
+                            <h1>Salidas de reactivos e insumo</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item active">Solicitud</li>
+                                <li class="breadcrumb-item active">Salidas</li>
                                 <li class="breadcrumb-item active">Nuevo</li>
                             </ol>
                         </div>
@@ -154,7 +161,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="fas fa-flask"></i>
-                                Formulario de registro de solicitudes de reactivos
+                                Formulario de registro de salidas de reactivos e insumos
                             </h3>
                         </div>
                         <div class="card-body">
@@ -163,7 +170,7 @@
                             <!-- /.col-12 -->
                             <div class="col mt-3 " >
                                 <form action="">
-                                    <h1 for="">Cabecera Solicitud</h1>
+                                    <h1 for="">Cabecera Salidas</h1>
                                     <fieldset class="form-group">
                                         <label for="id_nombre">Docente solicitante*</label>
                                         <input class="form-control" type="text" name="nombre" id="id_nombre">
@@ -196,7 +203,7 @@
                                 
                                 
                                     </fieldset>
-                                    <h1>Detalle solicitud</h1>
+                                    <h1>Detalle Salidas</h1>
                                   
                                     <a class=" " href="solicitudNuevo.html">Agregar</a>
                                     <input type="text" name="" id=""> <button>buscar</button>
@@ -213,7 +220,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>Cloruro de sodio  </td>
-                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="number" name="" id="">/ unid. Medida</td>
                                                 <td>  <a data-toggle="popover" title="Eliminar" class="btn btn-light btn-sm">
                                                     <i data-toggle="popover" title="Eliminar" class="fa fa-trash"></i>
                                                 </a></td>
@@ -221,7 +228,7 @@
                                             <tr>
                                                 <td>ACIDO SULFÚRICO
                                                 </td>
-                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="number" name="" id="">/ unid. Medida</td>
                                                 <td>  <a data-toggle="popover" title="Eliminar" class="btn btn-light btn-sm">
                                                     <i data-toggle="popover" title="Eliminar" class="fa fa-trash"></i>
                                                 </a></td>
