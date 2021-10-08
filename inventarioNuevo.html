@@ -83,20 +83,7 @@
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
 
                     <div class="info">
-                        <a href="#" class="d-block">Fuentes Peralta Nelson Kevin</a>
-                    </div>
-                </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                                <i class="fas fa-search fa-fw"></i>
-                            </button>
-                        </div>
+                        <a href="#" class="d-block">Administrador</a>
                     </div>
                 </div>
 
@@ -119,15 +106,22 @@
                         <li class="nav-item">
                             <a href="inventarioListar.html" class="nav-link">
                                 <i class="nav-icon far fa-edit"></i>
-                                <p> Inventario </p>
+                                <p> Reactivos </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="solicitudListar.html" class="nav-link">
                                 <i class="nav-icon far fa-edit"></i>
-                                <p> Solicitudes </p>
+                                <p> Salidas </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="entradaListar.html" class="nav-link">
+                                <i class="nav-icon far fa-edit"></i>
+                                <p> Entradas </p>
+                            </a>
+                        </li>
+
 
 
                     </ul>
@@ -144,12 +138,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Inventario</h1>
+                            <h1>Insumos y reactivos</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item active">Reactivos</li>
+                                <li class="breadcrumb-item active">Reactivos e insumos</li>
                                 <li class="breadcrumb-item active">Nuevo</li>
                             </ol>
                         </div>
@@ -166,7 +160,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="fas fa-flask"></i>
-                                Formulario de registro de reactivos
+                                Formulario de registro de reactivos e insumos
                             </h3>
                         </div>
                         <div class="card-body">
@@ -180,17 +174,29 @@
                                         <input class="form-control" type="text" name="nombre" id="id_nombre">
                                     </fieldset>
                                     <fieldset class="form-group">
-                                        <label for="id_formQuimica">Fórmula Química</label>
+                                        <label for="id_formQuimica">Fórmula Química*</label>
                                         <input class="form-control" type="text" name="formQuimica" id="id_formQuimica">
                                 
                                     </fieldset>
+                                    <fieldset class="form-group">
+                                        <label for="id_unidadMedida">Ubicación*</label>
+                                        <select  class="form-control" name="unidadMedida" id="id_unidadMedida">
+                                            <option value="0">Seleccione</option>
+                                            <option value="1">Laboratorio de x - bloque U</option>
+                                            <option value="2">Lboratorio de x - Bloque y</option>
+                                            <option value="3">Lboratorio de x - Bloque y</option>
+                                        </select>
+                                
+                                
+                                    </fieldset>
+
                                     <fieldset class="form-group">
                                         <label for="id_existencia">Existencia Total*</label>
                                         <input class="form-control" type="number" name="existencia" id="id_existencia">
                                 
                                     </fieldset>
                                     <fieldset class="form-group">
-                                        <label for="id_unidadMedida">Unidad de medida</label>
+                                        <label for="id_unidadMedida">Unidad de medida*</label>
                                         <select  class="form-control" name="unidadMedida" id="id_unidadMedida">
                                             <option value="0">Seleccione</option>
                                             <option value="1">Kg - kilogramo</option>

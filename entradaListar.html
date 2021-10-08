@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-             
+          
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
@@ -107,7 +107,7 @@
                         <li class="nav-item">
                             <a href="inventarioListar.html" class="nav-link">
                                 <i class="nav-icon far fa-edit"></i>
-                                <p> Reactivos </p>
+                                <p> Reactivos  </p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -116,13 +116,13 @@
                                 <p> Salidas </p>
                             </a>
                         </li>
-
                         <li class="nav-item">
                             <a href="entradaListar.html" class="nav-link">
                                 <i class="nav-icon far fa-edit"></i>
                                 <p> Entradas </p>
                             </a>
                         </li>
+
 
 
                     </ul>
@@ -139,12 +139,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Salidas</h1>
+                            <h1> Entrada de Reactivos e insumos</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item active">Salidas</li>
+                                <li class="breadcrumb-item active"> Entrada Reactivos e insumos</li>
                             </ol>
                         </div>
                     </div>
@@ -160,16 +160,16 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="fas fa-flask"></i>
-                                Listado de Salidas de reactivo
+                                Listado de Entrada de insumos y reactivos
                             </h3>
                         </div>
                         <div class="card-body">
 
                             <div class="form-inline">
                                 <div class=" form-group mb-2">
-                                    <a class="btn btn-primary " href="solicitudNuevo.html">Nuevo Registro</a>
+                                    <a class="btn btn-primary " href="entradaNuevo.html">Nuevo Registro</a>
                                 </div>
-                                 <!-- /.col-12
+                                   <!-- 
                                 <div class=" form-group mx-sm-3 mb-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-info ">Configuraciones</button>
@@ -178,14 +178,22 @@
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu " role="menu" style="">
-                                         
+                                            <a class="dropdown-item" href="#">Facultades</a>
+                                            <a class="dropdown-item" href="#">Carreras</a>
+                                            <a class="dropdown-item" href="#">Semestres</a>
+                                            <a class="dropdown-item" href="#">Bloques</a>
+                                            <a class="dropdown-item" href="#">Laboratorios</a>
+
+
+                                            <div class="dropdown-divider"></div>
                                         
                                             <a class="dropdown-item" href="#">unidades de medidas</a>
                                         </div>
                                     </div>
 
 
-                                </div> -->
+                                </div>
+                            -->
                             </div>
 
                             <!-- /.col-12 -->
@@ -195,38 +203,20 @@
                                         <tr>
                                             <th style="width: 10px">#</th>
                                             <th >Fecha</th>
-                                            <th >laboratorio</th>
-                                            <th >Facultad</th>
-                                            <th >Carrera</th>
-                                            <th >Semestre</th>
-                                            <th >Docente</th>
-                                            <th >Cantidad de alumno</th>
-                                            <th >documento</th>
+                                            <th >Nombre Común</th>
+
+                                            <th >Cantidad de entrada</th>
                                             <th >Acciones</th>
-                                           
-                                      
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1.</td>
-                                            <td>06/10/2021
-                                            </td>
-                                            <td>quimica
-                                            </td>
-                                            <td>faci
-                                            </td>
-                                            <td>biotecnologia
-                                            </td>
-                                            <td>7mo
-                                            </td>
-                                            <td>shigla prueb
-                                            </td>
-                                     
-                                            <td>16
-                                            </td>
+                                            <td >22 /enero/2021</td>
+                                            <td>D(-)FRUCTUOSA P.A </td>
+                                  
+                                            <td>3000 | G</td>
                                             
-                                            <th >formatoEntrega.pdf</th>
                                             <td>
                                                 <a data-toggle="popover" title="Ver" class="btn btn-light btn-sm ">
                                                     <i data-toggle="popover" title="Ver" class="fa fa-eye"></i>
@@ -248,22 +238,11 @@
                                         </tr>
                                         <tr>
                                             <td>2.</td>
-                                            <td>06/12/2021
+                                            <td >22 /enero/2021</td>
+                                            <td>ACIDO SULFÚRICO
                                             </td>
-                                            <td>fisica
-                                            </td>
-                                            <td>faci
-                                            </td>
-                                            <td>bio
-                                            </td>
-                                            <td>8vo
-                                            </td>
-                                            <td>docente prueb
-                                            </td>
-                                     
-                                            <td>16
-                                            </td>
-                                            <th >formatoEntrega.pdf</th>
+                                         
+                                            <td>9000 | G</td>
                                             
                                             <td>
                                                 <a data-toggle="popover" title="Ver" class="btn btn-light btn-sm ">
@@ -282,6 +261,35 @@
 
 
                                             </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td >22 /enero/2021</td>
+                                            <td>ALCOHOL ISO-PROPILICO
+
+                                            </td>
+                                           
+                                            <td>   1200 | KG</td>
+                                           
+                                            <td>
+                                                <a data-toggle="popover" title="Ver" class="btn btn-light btn-sm ">
+                                                    <i data-toggle="popover" title="Ver" class="fa fa-eye"></i>
+                                                </a>
+
+
+                                                <a data-toggle="popover" title="Editar" id="" class="btn btn-light btn-sm">
+                                                    <i data-toggle="popover" title="Editar" class="fa fa-edit"></i>
+                                                </a>
+
+
+                                                <a data-toggle="popover" title="Eliminar" class="btn btn-light btn-sm">
+                                                    <i data-toggle="popover" title="Eliminar" class="fa fa-trash"></i>
+                                                </a>
+
+
+                                            </td>
+                                        </tr>
                                       
                                     </tbody>
                                 </table>
